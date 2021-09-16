@@ -9,6 +9,8 @@ from imblearn.under_sampling import RandomUnderSampler
 from collections import Counter
 from sklearn.datasets import make_classification
 import xgboost as xgb
+import numpy as np
+import pandas as pd
 rus = RandomUnderSampler(random_state=2021)
 
 def calculate_precision(predict, real):
