@@ -21,7 +21,7 @@ def calculate_precision(predict, real):
         if predict[i] == 1 and real[i] == 1:
             cnt += 1
     print(cnt, np.sum(predict))
-    return cnt / np.sum(predict)
+    return cnt, np.sum(predict), cnt / np.sum(predict)
 
 # SVM
 def svm_classification(train, target, svm, k=5):
